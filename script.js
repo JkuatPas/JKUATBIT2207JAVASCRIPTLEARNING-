@@ -6,4 +6,4 @@ function createConfetti() {
         });
     }
 
-    setInterval(createConfetti, 1000);
+    setInterval(createConfetti, 3000);
