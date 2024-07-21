@@ -10,16 +10,16 @@ html {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f4;
+    background: #002239;
     padding-top: 60px; /* Space for fixed header */
 }
 
 /* Header Styling */
 header {
-    background-color: #2c3e50;
+    background: #002339;
     color: #fff;
     position: fixed;
     width: 100%;
@@ -69,10 +69,18 @@ nav a:hover {
 
 /* Header CTA */
 .header-cta {
-    padding: 60px 20px;
+    background-color: rgba(0, 35, 57, 0.8); /* Transparent background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
-    background-color: #1abc9c;
-    color: #fff;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transition effect */
+    opacity: 0.9; /* Initial opacity */
+}
+
+.header-cta:hover {
+    transform: scale(1.05); /* Popping effect on hover */
+    opacity: 1; /* Increase opacity on hover */
 }
 
 .header-cta h1 {
@@ -85,26 +93,26 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+/* Styles for the button */
 .btn-primary {
-    background-color: #e74c3c;
-    color: #fff;
+    display: inline-block;
     padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    background-color: #005580; /* Complementary button color */
+    color: #fff; /* White text color */
     text-decoration: none;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Button transition effect */
 }
 
 .btn-primary:hover {
-    background-color: #c0392b;
+    background-color: #003d5c; /* Darker shade on hover */
 }
 
 /* Hero Section */
 .hero {
     position: relative;
     overflow: hidden;
-    background-color: #ecf0f1;
+    background: #002339;
 }
 
 .hero-image {
@@ -148,7 +156,7 @@ nav a:hover {
 
 /* Features Section */
 .features {
-    background-color: #fff;
+    background: #002339;
     padding: 40px 20px;
     text-align: center;
 }
@@ -170,7 +178,7 @@ nav a:hover {
 
 /* About Section */
 .about {
-    background-color: #fff;
+    background: #002239;
     padding: 60px 20px;
     text-align: center;
 }
@@ -187,7 +195,7 @@ nav a:hover {
 
 /* Contact Section */
 .contact {
-    background-color: #fff;
+    background: #002239;
     padding: 60px 20px;
     text-align: center;
 }
@@ -230,7 +238,7 @@ nav a:hover {
 }
 
 .contact input[type="submit"] {
-    background-color: #e74c3c;
+    background: #002239;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -262,7 +270,7 @@ nav a:hover {
 
 /* Footer Styling */
 footer {
-    background-color: #2c3e50;
+    background-color: #002339;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -290,7 +298,7 @@ footer .container {
 }
 
 .footer-nav a {
-    color: #fff;
+    color: #2339;
     text-decoration: none;
     font-size: 0.875rem;
     transition: color 0.3s ease;
