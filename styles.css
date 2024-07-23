@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+}
+body{
+
+    background-repeat: no-repeat;
+    background:url(img/homebg.jpg);
+    background-size: cover;
+}
+header{
+    padding: 10px;
+    background: blue;
+}
+main{
+    padding: 10px;
+    text-align: center;
+    height: 100vh;
+}
+footer{
+    padding: 10px;
+    background-color: blue;
+    text-align: center;
+}
