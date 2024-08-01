@@ -1,10 +1,5 @@
-Welcome to the JKUAT BIT 2207 JAVASCRIPT LEARNING repository! 
+Assignment Submission
+Name: Polycarp Abidha
+Reg No: SCT221-C004-0152-20200
 
-This project is designed to facilitate learning and collaboration among students in the JKUAT BIT 2207 class.
-
-Instructions: 
--Clone/fork the repo
--Checkout to developer branch
--Push your code files to developer branch
--Maintainer will merge commits.
 
