@@ -1,64 +1,5 @@
 # Animations Profile 
 
-! git commands
-
-mwong@DESKTOP-OB MINGW64 ~
-# git clone https://github.com/JkuatPas/JKUATBIT2207JAVASCRIPTLEARNING-.git
-Cloning into 'JKUATBIT2207JAVASCRIPTLEARNING-'...
-remote: Enumerating objects: 159, done.
-remote: Counting objects: 100% (159/159), done.
-remote: Compressing objects: 100% (123/123), done.
-remote: Total 159 (delta 48), reused 107 (delta 25), pack-reused 0
-Receiving objects: 100% (159/159), 11.08 MiB | 797.00 KiB/s, done.
-Resolving deltas: 100% (48/48), done.
-
-mwong@DESKTOP-OB MINGW64 ~
-# cd JKUATBIT2207JAVASCRIPTLEARNING-
-
-mwong@DESKTOP-OB MINGW64 ~/JKUATBIT2207JAVASCRIPTLEARNING- (main)
-# git status
-On branch main
-Your branch is up to date with 'origin/main'.
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        .eslintrc.cjs
-        .gitignore
-        index.html
-        package-lock.json
-        package.json
-        public/
-        src/
-        vite.config.js
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-mwong@DESKTOP-OB MINGW64 ~/JKUATBIT2207JAVASCRIPTLEARNING- (main)
-# git add .
-warning: in the working copy of '.eslintrc.cjs', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'src/App.css', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'src/App.jsx', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'src/index.css', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'src/main.jsx', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'vite.config.js', LF will be replaced by CRLF the next time Git touches it
-
-mwong@DESKTOP-OB MINGW64 ~/JKUATBIT2207JAVASCRIPTLEARNING- (main)
-# git status
-On branch main
-Your branch is up to date with 'origin/main'.
-
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        new file:   .eslintrc.cjs
-        new file:   .gitignore
-        new file:   index.html
-        new file:   package-lock.json
-
-mwong@DESKTOP-OB MINGW64 ~
 # git clone https://github.com/JkuatPas/JKUATBIT2207JAVASCRIPTLEARNING-.git
 Cloning into 'JKUATBIT2207JAVASCRIPTLEARNING-'...
 remote: Enumerating objects: 159, done.
@@ -71,12 +12,12 @@ Resolving deltas: 100% (48/48), done.
 mwong@DESKTOP-OB MINGW64 ~
 # cd JKUATBIT2207JAVASCRIPTLEARNING-
 
-mwong@DESKTOP-OB MINGW64 ~/JKUATBIT2207JAVASCRIPTLEARNING- (main)
-$ git switch kiogoraMwongera
+~/JKUATBIT2207JAVASCRIPTLEARNING- (main)
+# git switch kiogoraMwongera
 branch 'kiogoraMwongera' set up to track 'origin/kiogoraMwongera'.
 Switched to a new branch 'kiogoraMwongera'
 
-mwong@DESKTOP-OB MINGW64 ~/JKUATBIT2207JAVASCRIPTLEARNING- (kiogoraMwongera)
+~/JKUATBIT2207JAVASCRIPTLEARNING- (kiogoraMwongera)
 # git status
 On branch kiogoraMwongera
 Your branch is up to date with 'origin/kiogoraMwongera'.
@@ -95,7 +36,7 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 
-mwong@DESKTOP-OB MINGW64 ~/JKUATBIT2207JAVASCRIPTLEARNING- (kiogoraMwongera)
+~/JKUATBIT2207JAVASCRIPTLEARNING- (kiogoraMwongera)
 # git add .
 warning: in the working copy of '.eslintrc.cjs', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
@@ -109,7 +50,7 @@ warning: in the working copy of 'src/index.css', LF will be replaced by CRLF the
 warning: in the working copy of 'src/main.jsx', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of 'vite.config.js', LF will be replaced by CRLF the next time Git touches it
 
-mwong@DESKTOP-OB MINGW64 ~/JKUATBIT2207JAVASCRIPTLEARNING- (kiogoraMwongera)
+~/JKUATBIT2207JAVASCRIPTLEARNING- (kiogoraMwongera)
 # git commit -m 'Initial commit'
 [kiogoraMwongera b930921] Initial commit
  17 files changed, 4430 insertions(+)
@@ -131,7 +72,7 @@ mwong@DESKTOP-OB MINGW64 ~/JKUATBIT2207JAVASCRIPTLEARNING- (kiogoraMwongera)
  create mode 100644 src/views/Contact.jsx
  create mode 100644 vite.config.js
 
-mwong@DESKTOP-OB MINGW64 ~/JKUATBIT2207JAVASCRIPTLEARNING- (kiogoraMwongera)
+~/JKUATBIT2207JAVASCRIPTLEARNING- (kiogoraMwongera)
 # git push origin kiogoraMwongera
 Enumerating objects: 25, done.
 Counting objects: 100% (25/25), done.
