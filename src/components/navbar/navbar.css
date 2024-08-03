@@ -1,9 +1,0 @@
-nav{
-    display:flex;
-    align-items: center;
-}
-ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-}
