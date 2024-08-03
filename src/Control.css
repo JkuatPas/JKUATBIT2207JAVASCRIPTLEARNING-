@@ -1,0 +1,20 @@
+main{
+    border: 3px solid rgb(222, 7, 7);
+    display: flex;
+}
+
+header{
+    background-image: url(./assets/animateone.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    color: white;
+    border: 3px solid rgb(222, 7, 11);
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20vh;
+}
