@@ -19,14 +19,14 @@ const Playground = () => {
         const cube = new THREE.Mesh(geometry, material);
         scene.add(cube);
 
-        camera.position.z = 5;
+        camera.position.z = 2;
         function animate(x,y) {
-            cube.rotation.x += y;
+            cube.rotation.x -= y;
             cube.rotation.y += x;
             // Update objects and camera here
             renderer.render(scene, camera);
         }
-        animate(9,21);
+        animate(9,53);
 
         return () => {
             // Cleanup function
