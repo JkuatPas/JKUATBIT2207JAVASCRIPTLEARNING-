@@ -22,12 +22,12 @@ const Playground = () => {
         camera.position.z = 2;
         function animate(x,y) {
         cube.rotation.x += y;
-            cube.rotation.y += x;
+            cube.rotation.y -= x;
             // Update objects and camera here
             renderer.render(scene, camera);
-            requestAnimationFrame(() => animate(x + 0.0001, y ));
+            requestAnimationFrame(() => animate(0.01 , y ));
         }
-        animate(0.001,0.01);
+        animate(0.001,0.0002);
 
         return () => {
             // Cleanup function
