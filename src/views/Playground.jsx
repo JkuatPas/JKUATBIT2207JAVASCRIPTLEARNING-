@@ -1,20 +1,48 @@
-import React from 'react'
-import Navbar from '../components/navbar/Navbar'
-import Footer from '../components/Footer'
-import './playground.css'
+import React, { useRef, useEffect } from 'react';
+import * as THREE from 'three';
+import Navbar from '../components/navbar/Navbar';
+import Footer from '../components/Footer';
+import './playground.css';
 
 const Playground = () => {
-  return (
-    <>
-    <Navbar/>
-    <h3>Playground</h3>
-    <p>This is the playground area for experimenting with animations and interactions.</p>
-    <main className='w-full h-screen my-4'>
+    const canvasRef = useRef(null);
 
-    </main>
-    <Footer />
-    </>
-  )
-}
+    useEffect(() => {
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ canvas: canvasRef.current });
+        renderer.setSize(window.innerWidth, window.innerHeight);
 
-export default Playground
+        // Add objects to the scene here
+        const geometry = new THREE.BoxGeometry(1, 1, 1);
+        const material = new THREE.MeshBasicMaterial({ color: 0x00fffAA });
+        const cube = new THREE.Mesh(geometry, material);
+        scene.add(cube);
+
+        camera.position.z = 5;
+        function animate(x,y) {
+            cube.rotation.x += y;
+            cube.rotation.y += x;
+            // Update objects and camera here
+            renderer.render(scene, camera);
+        }
+        animate(9,21);
+
+        return () => {
+            // Cleanup function
+            renderer.dispose();
+        };
+    }, []);
+
+    return (
+        <>
+            <Navbar />
+            <h3>Playground</h3>
+            <p className='text-center'>ThreeJS playground area for experimenting with animations and interactions.</p>
+            <canvas ref={canvasRef} className="w-full h-screen" />
+         {/* <Footer /> */}
+        </>
+    );
+};
+
+export default Playground;
