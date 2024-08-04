@@ -21,13 +21,13 @@ const Playground = () => {
 
         camera.position.z = 2;
         function animate(x,y) {
-        cube.rotation.x += y;
+            cube.rotation.x -= y;
             cube.rotation.y -= x;
             // Update objects and camera here
             renderer.render(scene, camera);
-            requestAnimationFrame(() => animate(0.01 , y ));
+            requestAnimationFrame(() => animate(0.03 , y ));
         }
-        animate(0.001,0.0002);
+        animate(0.001,0);
 
         return () => {
             // Cleanup function
@@ -39,7 +39,7 @@ const Playground = () => {
         <>
             <Navbar />
             <h3>Playground</h3>
-            <p className='text-center'>ThreeJS playground area for experimenting with animations and interactions.</p>
+            <p className='text-center'>ThreeJS playground area for experimenting with animations and object interactions.</p>
             <canvas ref={canvasRef} className="w-full h-screen" />
          {/* <Footer /> */}
         </>
