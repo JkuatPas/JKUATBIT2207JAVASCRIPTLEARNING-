@@ -1,13 +1,15 @@
 import React from 'react'
+//import Clock from 'react-clock'
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/Footer'
 import HeaderImage from './assets/animateone.gif'
+import Clock from './components/clock/Clock'
 import './Control.css'
 function App  () {
   return (
     < > 
-      <Navbar/>   
-      <header className='pt-16 justify-center'>
+      <Navbar />   
+      <header className='pt-16 justify-center h-screen'>
         <article className='text-center'>
           <div className='title'>
             <span className='text-6xl shadow-2xl font-bold text-red mt-20'>Kreativ_Saharaa</span> 
@@ -15,7 +17,8 @@ function App  () {
            </div>
         </article>
       </header>
-      <h3 className='text-2xl font-bold'>Get Started</h3>
+      <Clock />
+      <h3 className='text-6xl font-bold'>Get Started</h3>
       <main className=' w-full h-fit md:flex md:flex-col'>
         <section className='avatar'>
           <img src={HeaderImage} alt="" />
